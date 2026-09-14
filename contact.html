@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>تواصل معنا | LUMINA DENTAL</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&family=Playfair+Display:wght@500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="site-header">
+        <div class="container header-content">
+
+            <a href="index.html" class="logo">
+                <span class="logo-mark">L</span>
+
+                <span class="logo-text">
+                    <strong>LUMINA</strong>
+                    <small>DENTAL CLINIC</small>
+                </span>
+            </a>
+
+            <nav class="main-nav">
+                <a href="index.html">الرئيسية</a>
+                <a href="services.html">خدماتنا</a>
+                <a href="index.html#about">عن العيادة</a>
+                <a href="doctors.html">الأطباء</a>
+                <a href="contact.html" class="active">تواصل معنا</a>
+            </nav>
+
+            <a href="appointment.html" class="header-button">
+                احجز موعدك
+                <span>←</span>
+            </a>
+
+            <button class="menu-toggle" aria-label="فتح القائمة">
+                ☰
+            </button>
+
+        </div>
+    </header>
+
+    <!-- Inner Hero -->
+    <section class="inner-hero">
+        <div class="container inner-hero-content">
+
+            <span class="eyebrow">CONTACT US</span>
+
+            <h1>
+                نحن هنا
+                <span>لمساعدتك</span>
+            </h1>
+
+            <p>
+                تواصل معنا لمعرفة المزيد عن خدماتنا أو لحجز موعد يناسبك
+                مع فريق عيادة لومينا لطب الأسنان.
+            </p>
+
+            <div class="breadcrumb">
+                <a href="index.html">الرئيسية</a>
+                <span>←</span>
+                <strong>تواصل معنا</strong>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-page-section section-padding">
+        <div class="container">
+
+            <div class="contact-page-heading">
+                <span class="section-label">GET IN TOUCH</span>
+
+                <h2>
+                    دعنا نبدأ
+                    <span>ابتسامتك الجديدة</span>
+                </h2>
+
+                <p>
+                    فريقنا جاهز للرد على استفساراتك ومساعدتك في اختيار
+                    الخدمة المناسبة وحجز موعدك بسهولة.
+                </p>
+            </div>
+
+            <div class="contact-page-grid">
+
+                <!-- Contact Information -->
+                <div class="contact-page-info">
+
+                    <div class="contact-page-item">
+                        <div class="contact-page-icon">⌖</div>
+
+                        <div>
+                            <h3>عنوان العيادة</h3>
+                            <p>
+                                شارع رئيسي، الرياض، المملكة العربية السعودية
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="contact-page-item">
+                        <div class="contact-page-icon">☎</div>
+
+                        <div>
+                            <h3>اتصل بنا</h3>
+                            <p dir="ltr">
+                                +966 50 000 0000
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="contact-page-item">
+                        <div class="contact-page-icon">✉</div>
+
+                        <div>
+                            <h3>البريد الإلكتروني</h3>
+                            <p>
+                                info@luminadental.com
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="contact-page-item">
+                        <div class="contact-page-icon">◷</div>
+
+                        <div>
+                            <h3>مواعيد العمل</h3>
+                            <p>
+                                السبت - الخميس<br>
+                                10:00 صباحًا - 10:00 مساءً
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Contact Form -->
+                <div class="contact-page-form">
+
+                    <h3>أرسل لنا رسالة</h3>
+
+                    <p>
+                        اكتب بياناتك وسنتواصل معك في أقرب وقت.
+                    </p>
+
+                    <form id="contactForm">
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="contactName">الاسم بالكامل</label>
+                                <input
+                                    type="text"
+                                    id="contactName"
+                                    placeholder="اكتب اسمك"
+                                    required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="contactPhone">رقم الهاتف</label>
+                                <input
+                                    type="tel"
+                                    id="contactPhone"
+                                    placeholder="05xxxxxxxx"
+                                    required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="contactEmail">البريد الإلكتروني</label>
+                            <input
+                                type="email"
+                                id="contactEmail"
+                                placeholder="example@email.com">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="contactSubject">موضوع الرسالة</label>
+                            <select id="contactSubject" required>
+                                <option value="">اختر موضوع الرسالة</option>
+                                <option value="استفسار عام">استفسار عام</option>
+                                <option value="حجز موعد">حجز موعد</option>
+                                <option value="خدمات العيادة">خدمات العيادة</option>
+                                <option value="استفسار عن الأسعار">استفسار عن الأسعار</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="contactMessage">رسالتك</label>
+                            <textarea
+                                id="contactMessage"
+                                rows="6"
+                                placeholder="اكتب رسالتك هنا..."
+                                required></textarea>
+                        </div>
+
+                        <button type="submit" class="primary-button form-submit">
+                            إرسال الرسالة
+                            <span>←</span>
+                        </button>
+
+                        <div id="contactSuccess" class="success-message"></div>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="contact-map-section">
+        <div class="container">
+
+            <div class="contact-map-large">
+                <div>
+                    <span class="section-label">OUR LOCATION</span>
+                    <h2>موقعنا في انتظارك</h2>
+                    <p>
+                        يمكنك التواصل معنا لمعرفة الموقع بالتفصيل
+                        أو طلب إرسال رابط العنوان عبر واتساب.
+                    </p>
+
+                    <a
+                        href="https://wa.me/201000000000"
+                        target="_blank"
+                        rel="noopener"
+                        class="primary-button">
+                        اطلب موقع العيادة
+                        <span>←</span>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- WhatsApp Button -->
+    <a
+        href="https://wa.me/201000000000"
+        class="whatsapp-float"
+        target="_blank"
+        rel="noopener"
+        aria-label="تواصل معنا عبر واتساب"
+        title="تواصل معنا عبر واتساب">
+        ☎
+    </a>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+
+            <div class="footer-main">
+
+                <div class="footer-brand">
+                    <a href="index.html" class="logo footer-logo">
+                        <span class="logo-mark">L</span>
+
+                        <span class="logo-text">
+                            <strong>LUMINA</strong>
+                            <small>DENTAL CLINIC</small>
+                        </span>
+                    </a>
+
+                    <p>
+                        عناية متخصصة وابتسامة صحية في بيئة راقية
+                        تهتم براحتك وثقتك.
+                    </p>
+                </div>
+
+                <div class="footer-column">
+                    <h4>روابط سريعة</h4>
+                    <a href="index.html">الرئيسية</a>
+                    <a href="services.html">خدماتنا</a>
+                    <a href="doctors.html">الأطباء</a>
+                    <a href="appointment.html">حجز موعد</a>
+                </div>
+
+                <div class="footer-column">
+                    <h4>الخدمات</h4>
+                    <a href="services.html">زراعة الأسنان</a>
+                    <a href="services.html">تجميل الابتسامة</a>
+                    <a href="services.html">تقويم الأسنان</a>
+                    <a href="services.html">تبييض الأسنان</a>
+                </div>
+
+                <div class="footer-column">
+                    <h4>تواصل معنا</h4>
+                    <p>الرياض، السعودية</p>
+                    <p dir="ltr">+966 50 000 0000</p>
+                    <p>info@luminadental.com</p>
+                </div>
+
+            </div>
+
+            <div class="footer-bottom">
+                <p>
+                    © 2026 LUMINA DENTAL. جميع الحقوق محفوظة.
+                </p>
+
+                <p>
+                    تصميم وتطوير Front-End
+                </p>
+            </div>
+
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

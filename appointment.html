@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>حجز موعد | LUMINA DENTAL</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&family=Playfair+Display:wght@500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="site-header">
+
+        <div class="container header-content">
+
+            <a href="index.html" class="logo">
+
+                <span class="logo-mark">
+                    L
+                </span>
+
+                <span class="logo-text">
+                    <strong>LUMINA</strong>
+                    <small>DENTAL CLINIC</small>
+                </span>
+
+            </a>
+
+
+            <nav class="main-nav">
+
+                <a href="index.html">
+                    الرئيسية
+                </a>
+
+                <a href="services.html">
+                    خدماتنا
+                </a>
+
+                <a href="index.html#about">
+                    عن العيادة
+                </a>
+
+                <a href="doctors.html">
+                    الأطباء
+                </a>
+
+                <a href="index.html contact">
+                    تواصل معنا
+                </a>
+
+            </nav>
+
+
+            <a href="appointment.html" class="header-button">
+                احجز موعدك
+                <span>↗</span>
+            </a>
+
+
+            <button class="menu-toggle" aria-label="فتح القائمة">
+                ☰
+            </button>
+
+        </div>
+
+    </header>
+
+
+    <!-- Page Hero -->
+    <section class="inner-hero">
+
+        <div class="container inner-hero-content">
+
+            <span class="eyebrow">
+                موعدك يبدأ بخطوة
+            </span>
+
+            <h1>
+                احجز موعدك<br>
+                <span>بكل سهولة</span>
+            </h1>
+
+            <p>
+                املأ البيانات التالية، وسيتواصل معك فريق العيادة
+                لتأكيد الموعد المناسب لك.
+            </p>
+
+            <div class="breadcrumb">
+
+                <a href="index.html">
+                    الرئيسية
+                </a>
+
+                <span>/</span>
+
+                <strong>
+                    حجز موعد
+                </strong>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Appointment Section -->
+    <section class="appointment-section">
+
+        <div class="container appointment-wrapper">
+
+
+            <!-- Information -->
+            <div class="appointment-info">
+
+                <span class="section-label">
+                    LUMINA DENTAL
+                </span>
+
+                <h2>
+                    نحن هنا<br>
+                    <span>لنهتم بابتسامتك</span>
+                </h2>
+
+                <p>
+                    أخبرنا بالموعد والخدمة المناسبة لك،
+                    وسيقوم فريقنا بالتواصل معك لتأكيد الحجز.
+                </p>
+
+
+                <ul class="appointment-info-list">
+
+                    <li>
+                        حجز استشارة أولية
+                    </li>
+
+                    <li>
+                        اختيار الخدمة المناسبة
+                    </li>
+
+                    <li>
+                        تحديد الطبيب المفضل
+                    </li>
+
+                    <li>
+                        تأكيد الموعد عبر الهاتف أو واتساب
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <!-- Form Box -->
+            <div class="appointment-form-box">
+
+                <span class="section-label">
+                    APPOINTMENT REQUEST
+                </span>
+
+                <h2>
+                    طلب حجز موعد
+                </h2>
+
+                <p>
+                    من فضلك اكتب بياناتك الأساسية، وسنتواصل معك
+                    لتأكيد الموعد.
+                </p>
+
+
+                <form id="appointmentForm">
+
+
+                    <!-- Name -->
+                    <div class="form-group">
+
+                        <label for="patientName">
+                            الاسم بالكامل
+                        </label>
+
+                        <input
+                            type="text"
+                            id="patientName"
+                            name="patientName"
+                            placeholder="اكتب اسمك بالكامل"
+                            required
+                        >
+
+                    </div>
+
+
+                    <!-- Phone -->
+                    <div class="form-group">
+
+                        <label for="patientPhone">
+                            رقم الهاتف
+                        </label>
+
+                        <input
+                            type="tel"
+                            id="patientPhone"
+                            name="patientPhone"
+                            placeholder="01000000000"
+                            required
+                        >
+
+                    </div>
+
+
+                    <!-- Service -->
+                    <div class="form-group">
+
+                        <label for="service">
+                            الخدمة المطلوبة
+                        </label>
+
+                        <select
+                            id="service"
+                            name="service"
+                            required
+                        >
+
+                            <option value="">
+                                اختر الخدمة
+                            </option>
+
+                            <option value="زراعة الأسنان">
+                                زراعة الأسنان
+                            </option>
+
+                            <option value="تجميل الابتسامة">
+                                تجميل الابتسامة
+                            </option>
+
+                            <option value="تقويم الأسنان">
+                                تقويم الأسنان
+                            </option>
+
+                            <option value="تنظيف الأسنان واللثة">
+                                تنظيف الأسنان واللثة
+                            </option>
+
+                            <option value="تبييض الأسنان">
+                                تبييض الأسنان
+                            </option>
+
+                            <option value="علاج جذور الأسنان">
+                                علاج جذور الأسنان
+                            </option>
+
+                            <option value="حشو وترميم الأسنان">
+                                حشو وترميم الأسنان
+                            </option>
+
+                            <option value="طب أسنان الأطفال">
+                                طب أسنان الأطفال
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <!-- Doctor -->
+                    <div class="form-group">
+
+                        <label for="doctor">
+                            الطبيب المفضل
+                        </label>
+
+                        <select
+                            id="doctor"
+                            name="doctor"
+                        >
+
+                            <option value="">
+                                لا يوجد تفضيل
+                            </option>
+
+                            <option value="د. أحمد محمود">
+                                د. أحمد محمود
+                            </option>
+
+                            <option value="د. سارة علي">
+                                د. سارة علي
+                            </option>
+
+                            <option value="د. محمد عادل">
+                                د. محمد عادل
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <!-- Date and Time -->
+                    <div class="form-row">
+
+
+                        <div class="form-group">
+
+                            <label for="appointmentDate">
+                                التاريخ المفضل
+                            </label>
+
+                            <input
+                                type="date"
+                                id="appointmentDate"
+                                name="appointmentDate"
+                                required
+                            >
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="appointmentTime">
+                                الوقت المفضل
+                            </label>
+
+                            <select
+                                id="appointmentTime"
+                                name="appointmentTime"
+                                required
+                            >
+
+                                <option value="">
+                                    اختر الوقت
+                                </option>
+
+                                <option value="10:00 صباحًا">
+                                    10:00 صباحًا
+                                </option>
+
+                                <option value="12:00 ظهرًا">
+                                    12:00 ظهرًا
+                                </option>
+
+                                <option value="2:00 مساءً">
+                                    2:00 مساءً
+                                </option>
+
+                                <option value="4:00 مساءً">
+                                    4:00 مساءً
+                                </option>
+
+                                <option value="6:00 مساءً">
+                                    6:00 مساءً
+                                </option>
+
+                                <option value="8:00 مساءً">
+                                    8:00 مساءً
+                                </option>
+
+                            </select>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Notes -->
+                    <div class="form-group">
+
+                        <label for="notes">
+                            ملاحظات إضافية
+                        </label>
+
+                        <textarea
+                            id="notes"
+                            name="notes"
+                            rows="5"
+                            placeholder="اكتب أي ملاحظات أو تفاصيل إضافية"
+                        ></textarea>
+
+                    </div>
+
+
+                    <!-- Submit -->
+                    <button
+                        type="submit"
+                        class="primary-button form-submit"
+                    >
+
+                        إرسال طلب الحجز
+
+                        <span>↗</span>
+
+                    </button>
+
+
+                    <!-- Success Message -->
+                    <div
+                        id="successMessage"
+                        class="success-message"
+                    >
+                    </div>
+
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="site-footer">
+
+        <div class="container">
+
+            <div class="footer-main">
+
+
+                <div class="footer-brand">
+
+                    <a href="index.html" class="logo footer-logo">
+
+                        <span class="logo-mark">
+                            L
+                        </span>
+
+                        <span class="logo-text">
+                            <strong>LUMINA</strong>
+                            <small>DENTAL CLINIC</small>
+                        </span>
+
+                    </a>
+
+                    <p>
+                        عناية متخصصة، تجربة مريحة،
+                        وابتسامة تستحق الأفضل.
+                    </p>
+
+                </div>
+
+
+                <div class="footer-column">
+
+                    <h4>
+                        روابط سريعة
+                    </h4>
+
+                    <a href="index.html">
+                        الرئيسية
+                    </a>
+
+                    <a href="services.html">
+                        خدماتنا
+                    </a>
+
+                    <a href="doctors.html">
+                        الأطباء
+                    </a>
+
+                    <a href="appointment.html">
+                        حجز موعد
+                    </a>
+
+                </div>
+
+
+                <div class="footer-column">
+
+                    <h4>
+                        الخدمات
+                    </h4>
+
+                    <a href="services.html">
+                        زراعة الأسنان
+                    </a>
+
+                    <a href="services.html">
+                        تجميل الابتسامة
+                    </a>
+
+                    <a href="services.html">
+                        تقويم الأسنان
+                    </a>
+
+                    <a href="services.html">
+                        تنظيف الأسنان
+                    </a>
+
+                </div>
+
+
+                <div class="footer-column">
+
+                    <h4>
+                        تواصل معنا
+                    </h4>
+
+                    <p>
+                        السبت - الخميس
+                    </p>
+
+                    <p>
+                        10:00 صباحًا - 10:00 مساءً
+                    </p>
+
+                    <p>
+                        الهاتف: 01000000000
+                    </p>
+
+                </div>
+
+
+            </div>
+
+
+            <div class="footer-bottom">
+
+                <p>
+                    © 2026 LUMINA DENTAL. جميع الحقوق محفوظة.
+                </p>
+
+                <p>
+                    هذا الموقع نموذج تجريبي للتصميم.
+                </p>
+
+            </div>
+
+        </div>
+
+    </footer>
+    <a
+        href="https://wa.me/201096756608"
+        class="whatsapp-float"
+        target="_blank"
+        rel="noopener"
+        aria-label="تواصل معنا عبر واتساب"
+        title="تواصل معنا عبر واتساب"
+    >
+        ☎
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>
